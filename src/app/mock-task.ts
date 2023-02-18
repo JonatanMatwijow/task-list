@@ -1,6 +1,6 @@
 import { task } from "./task"
 
-export const TASK: task[] = [
+export const TASKS: task[] = [
     {
         id: 1,
         text: "Tengo que ponerme las pilas para aprender bien y asi obtener laburo de desarrollador",
