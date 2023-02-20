@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { task} from 'src/app/task';
-import { TASKS } from 'src/app/mock-task';
+import { TASKS} from '../../mock-task';
+import { task } from '../../Task';
+
+
+
+
 
 @Component({
   selector: 'app-tasks',
@@ -12,7 +16,9 @@ import { TASKS } from 'src/app/mock-task';
 
 export class TasksComponent implements OnInit {
 
-  task:task[] = TASKS
+
+  
+  task: task[] = TASKS;
 
   constructor(){}
 
