@@ -1,0 +1,31 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+.task{
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+.task.reminder{
+    border-left: 5px solid green;
+}
+
+
+.task .task_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task .task_flex h3 {
+    max-width: 350px;
+    text-align: justify;
+}
+
+.task p{
+    padding-top:  10px;
+}
+
+
+
