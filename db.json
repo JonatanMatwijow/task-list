@@ -35,6 +35,12 @@
             "text":"Tengo los huevos al plato",
             "day":"vallansen a la mierda",
             "reminder": true
+        },
+        {
+            "id": 10,
+            "text":"Tengo los huevos al plato",
+            "day":"vallansen a la mierda",
+            "reminder": true
         }
     ]
 }

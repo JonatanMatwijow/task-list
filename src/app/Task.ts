@@ -1,5 +1,5 @@
 //Esto sera la interfaz del cual sera importada en el mock.
-export interface task
+export interface Task
 {
     id?: number,
     text: string,

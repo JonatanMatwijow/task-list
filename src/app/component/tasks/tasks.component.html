@@ -1,6 +1,6 @@
 <app-tasks-item
- *ngFor="let task of task"
- [task] = "task"
-
- >
+  *ngFor="let task of task"
+  [task]="task"
+  (onDeleteTask)="deleteTask(task)"
+>
 </app-tasks-item>

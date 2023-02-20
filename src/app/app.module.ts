@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import{HttpClientModule} from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import{HttpClientModule} from '@angular/common/http'
 
 
 import { AppComponent } from './app.component';
@@ -23,8 +23,9 @@ import { TasksItemComponent } from './component/tasks-item/tasks-item.component'
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
