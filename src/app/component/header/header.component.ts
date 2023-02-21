@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 
 export class HeaderComponent implements OnInit {
   title: String = 'Task-list';
-  showAddTask:boolean = true;
+  showAddTask:boolean = false;
   Subscription?: Subscription;
 
   constructor(private uiService : UiService ) { 
