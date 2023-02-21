@@ -1,25 +1,45 @@
-import { Injectable, OnInit } from '@angular/core';
-import{HttpClient, HttpHandler} from '@angular/common/http'
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Observable} from 'rxjs';
-import { task } from '../Task';
+import { Observable } from 'rxjs';
+import { Task } from '../Task';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+    "Content-Type": "application/json"
+  })
+};
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
-
 
 export class TaskService {
 
-  private apiUrl = "http://localhost:5004/tasks"
   constructor(
-    private http:HttpClient
+    private http: HttpClient
   ) { }
 
-  getTasks() : Observable<task[]>
-  {
-    return this.http.get<task[]>(this.apiUrl);
+  private apiUrl = 'http://localhost:5001/tasks';
+
+
+
+
+  getTasks(): Observable<Task[]> {
+    return this.http.get<Task[]>(this.apiUrl);
+  }
+
+  deleteTask(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.delete<Task>(url);
+  }
+
+  updateTaskReminder(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.put<Task>(url, task, httpOptions);
+  }
+
+  addTask(task: Task): Observable<Task> {
+    return this.http.post<Task>(this.apiUrl, task, httpOptions);
   }
 }
