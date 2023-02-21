@@ -22,12 +22,24 @@ export class TasksComponent implements OnInit {
 
   ngOnInit(): void {
     this.TaskService.getTasks()
-      .subscribe(task => this.task = task);
-
+      .subscribe((tasks) => (this.task = tasks));
   }
+
 
   deleteTask(task: Task) {
-    this.TaskService.deleteTask(task).subscribe();
-      this.task = this.task.filter((t) => (t.id !== task.id))
+    this.TaskService
+      .deleteTask(task)
+      .subscribe(
+        (task) => this.task = this.task.filter((t) => (t.id !== task.id))
+      )
+
+      console.log("deberia de borrar");
   }
+
+
+  toggleReminder(task: Task) {
+    task.reminder = !task.reminder
+    this.TaskService.updateTaskReminder(task).subscribe();
+  }
+
 }
