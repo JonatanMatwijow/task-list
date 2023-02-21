@@ -11,6 +11,12 @@
       "day": "22/02 20hs",
       "reminder": true,
       "id": 4
+    },
+    {
+      "text": "dasd",
+      "day": "adasd",
+      "reminder": true,
+      "id": 5
     }
   ]
 }
