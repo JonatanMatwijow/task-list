@@ -7,22 +7,10 @@
       "reminder": false
     },
     {
-      "id": 4,
-      "text": "ver los videos que estan en youtube, programaTK, son de re ayuda",
-      "day": "Agosto 5 a las 15hs",
-      "reminder": false
-    },
-    {
-      "id": 5,
-      "text": "Tengo que terminar el pozo ciego",
-      "day": "antes de que vero me ahorque",
-      "reminder": true
-    },
-    {
-      "id": 10,
-      "text": "Tengo los huevos al plato",
-      "day": "vallansen a la mierda",
-      "reminder": true
+      "text": "Debo de sacar niveles para terminar de realizar la tapa del pozo ciego.",
+      "day": "22/02 20hs",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
