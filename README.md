@@ -1,5 +1,13 @@
 # TaskList
 
+------------------------------------------------------------------------------------------
+
+Este proyecto salio de la master class del modulo 4, viendo Angular del curso YoProgramo. 
+
+------------------------------------------------------------------------------------------
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
 ## Development server
